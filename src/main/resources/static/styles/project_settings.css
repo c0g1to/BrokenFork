@@ -1,0 +1,90 @@
+body {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Container {
+    width: 30%;
+    height: 95%;
+}
+
+.containerCap {
+    height: 10%;
+}
+
+.containerCap > .line {
+    font-size: 1.2em;
+    align-self: center;
+    color: white;
+}
+
+#photo {
+    width: 80%;
+}
+
+#photo > img {
+    /*height: 360px;*/
+    /*min-width: 50%;*/
+}
+
+#aboutProject > form.fields {
+    height: 20%;
+}
+
+form.fields > input[type="text"] {
+    width: 80%;
+}
+
+textarea {
+    width: 90%;
+    height: 100%;
+}
+
+#membersList {
+    justify-content: start;
+}
+
+.lineMenu {
+    width: 100%;
+    max-height: 88%;
+    grid-template-columns: 1fr;
+}
+
+.lineMenu > div:nth-child(2n) {
+    background-color: var(--b-dark);
+}
+
+.lineMenu > div > p {
+    margin-left: 3%;
+    width: 45%;
+    text-align: left;
+}
+
+.lineMenu > div > button {
+    width: 35%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.lineMenu > div:nth-child(2n) > button,
+.lineMenu > div:nth-child(2n + 1) > button:active {
+    background-color: var(--b-color);
+}
+
+.lineMenu > div:nth-child(2n + 1) > button,
+.lineMenu > div:nth-child(2n) > button:active {
+    background-color: var(--b-dark);
+}
+
+.lineMenu > div > img {
+    width: 48px;
+    height: 48px;
+    margin-right: 3%;
+}
+
+.containerCap:last-child {
+    display: none;
+}

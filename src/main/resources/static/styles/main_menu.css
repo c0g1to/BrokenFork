@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.SidebarHolder .containerCap:first-child {
+    display: none;
+}
+
+.SidebarHolder .containerCap:last-child {
+    flex-direction: column;
+    padding: 5%;
+}
+
+.SidebarHolder .AButton {
+    width: 90%;
+}
+
+.leftSidebar {
+    height: 75%;
+}
+
+.VMenu {
+    /*max-height: 90%;*/
+}
+
+.leftSidebar > img {
+    max-height: 40%;
+}
+
+.leftSidebar > .line:first-child {
+    align-self: center;
+}
+
+.leftSidebar > .containerCap:last-child {
+    height: 20%;
+}
+
+form.fields > * {
+    width: 20%;
+}
+
+form.fields > :first-child {
+    width: 30%;
+}
+
+form.fields > :last-child {
+    width: 12%;
+}
+
+.rightSidebar {
+    display: none;
+    height: 60%;
+}
+
+.SidebarHolder:nth-child(3) > .BButton {
+    font-size: 1.2em;
+    align-self: flex-end;
+    width: 80%;
+    padding: 0.4em 0;
+}
+
+.rightSidebar > .containerCap:last-child {
+    height: 25%;
+}
+
+.rightSidebar .line {
+    align-self: center;
+}
+
+.rightSidebar > img {
+    max-height: 50%;
+}

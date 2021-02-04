@@ -1,0 +1,45 @@
+body {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container {
+    width: 720px;
+    height: 540px;
+}
+
+.containerCap {
+    height: 15%;
+}
+
+.containerCap:first-child > .AButton {
+    width: 35%;
+}
+
+.containerCap:first-child > .AButton:last-child {
+    background: var(--b-dark);
+    font-weight: bold;
+}
+
+form.fields {
+    height: 52%;
+}
+
+form.fields > * {
+    width: 40%;
+    margin: 0.6em;
+}
+
+form.fields > .BButton {
+    width: 35%;
+}
+
+[name='nickname'] {
+    display: none;
+}
+
+.containerCap:last-child > .AButton {
+    width: 60%;
+}

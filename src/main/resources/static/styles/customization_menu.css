@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.MenuHolder .containerCap:first-child {
+    height: 8%;
+}
+
+.VMenu {
+    flex-shrink: 1000000;
+}
+
+.HMenu {
+}
+
+form.fields > * {
+    width: 20%;
+}
+
+form.fields > :first-child {
+    width: 30%;
+}
+
+form.fields > :last-child {
+    width: 12%;
+}

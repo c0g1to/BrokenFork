@@ -1,0 +1,251 @@
+:root {
+    --a-light: #FFFFFF;
+    --a-color: #FCFCFC;
+    --a-dark: #ECECEC;
+    --b-light: #F3F3F3;
+    --b-color: #E3E3E3;
+    --b-dark: #D3D3D3;
+    --c-light: #CFCFCF;
+    --c-color: #BFBFBF;
+    --c-dark: #AFAFAF;
+    --d-light: #8D8D8D;
+    --d-color: #7D7D7D;
+    --d-dark: #6D6D6D;
+    --e-light: #5C5C5C;
+    --e-color: #4C4C4C;
+    --e-dark: #3C3C3C;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 1vh 0.5vw;
+    font-size: 16px;
+}
+
+img {
+    -webkit-user-select: none;
+}
+
+
+/* HOLDERS */
+.MenuHolder {
+    font-size: 1em;
+    justify-content: start;
+    width: 64%;
+    height: 100%;
+}
+
+.MenuHolder > .containerCap:first-child {
+    min-height: 8%;
+}
+
+.MenuHolder > .containerCap:last-child {
+    display: none;
+}
+
+.SidebarHolder {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 17.5%;
+    height: 100%;
+}
+
+.SidebarHolder > .BButton {
+    margin-bottom: 10%;
+}
+
+.SidebarHolder img {
+    max-width: 90%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+
+/* CONTAINERS */
+.Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: var(--b-color);
+}
+
+.containerCap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0 5%;
+    background-color: var(--e-color);
+}
+
+.containerCap:first-child {
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 2px 3px -1px black;
+}
+
+.containerCap:last-child {
+    border-top-color: var(--e-light);
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* MENU */
+.VMenu, .HMenu {
+    display: grid;
+    overflow: auto;
+}
+
+.VMenu > div, .HMenu > div, #photo {
+    position: relative;
+    -webkit-user-select: none;
+    border-radius: 10px;
+}
+
+.VMenu img, .HMenu img, #photo > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.VMenu a, .HMenu a, #photo > a {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.VMenu.blockMenu {
+    margin: 1% 0 1% 1%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.HMenu.blockMenu {
+    overflow-y: hidden;
+    margin: 0 1%;
+    grid-template-columns: repeat(100, 24%);
+}
+
+.blockMenu {
+    grid-gap: 1%;
+}
+
+.lineMenu > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/* BUTTONS */
+.AButton, .BButton {
+    padding: 0.3em 0;
+    -webkit-user-select: none;
+    text-align: center;
+}
+
+.AButton {
+    border-radius: 3px;
+    background-color: var(--b-color);
+    box-shadow: 1px 1px 3px 0 black;
+}
+
+.AButton:active {
+    font-weight: bold;
+    background-color: var(--b-dark);
+}
+
+.BButton {
+    color: white;
+    border-radius: 5px;
+    background-color: var(--e-color);
+    box-shadow: 1px 2px 5px 0 black;
+}
+
+.BButton:active {
+    font-weight: bold;
+    background-color: var(--e-light);
+}
+
+
+/* FIELDS */
+.fields {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fields > input, .fields > select, .fields > textarea, button {
+    font-size: inherit;
+    padding: 0.3em;
+    border-width: 0;
+    border-radius: 3px;
+    outline: none;
+}
+
+.fields > input[type="text"], .fields > input[type="password"] {
+    border-width: 0;
+    background-color: var(--a-color);
+}
+
+.fields > input[type="text"]:focus, .fields > input[type="password"]:focus {
+    background-color: var(--a-dark);
+}
+
+.fields > input[type="button"], .fields > select {
+    background-color: var(--b-color);
+}
+
+.fields > input[type="button"]:active, .fields > select:focus {
+    background-color: var(--b-dark);
+}
+
+.line {
+    font-weight: bold;
+    align-self: start;
+    margin: 0 5%;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* MISC */
+.logoButton {
+    align-self: flex-start;
+    width: fit-content;
+    padding: 0;
+}
+
+.logoButton > img {
+    width: 140px;
+    height: 80px;
+}
+
+
+/* CONFLICTS */
+.MenuHolder.Container {
+    justify-content: start;
+}
+
+.containerCap.fields {
+    flex-direction: row;
+    width: 90%;
+    padding: 0 5%;
+}

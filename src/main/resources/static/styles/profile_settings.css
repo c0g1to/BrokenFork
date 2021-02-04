@@ -1,0 +1,39 @@
+body {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Container {
+    width: 480px;
+    height: 720px;
+}
+
+.containerCap {
+    height: 10%;
+}
+
+.containerCap > .line {
+    font-size: 1.5em;
+    align-self: center;
+    color: white;
+}
+
+#photo > img {
+    width: 360px;
+    height: 360px;
+}
+
+form.fields {
+    height: 20%;
+}
+
+form.fields > * {
+    margin: 0.6em;
+}
+
+.AButton {
+    width: 60%;
+}
